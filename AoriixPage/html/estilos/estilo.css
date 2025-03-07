@@ -1,0 +1,268 @@
+/* Tipografía */
+h1, h2 {
+    font-family: 'Gotham Ultra';
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+h1 img{
+
+    width: 0 auto;
+    height: 14vh;
+}
+
+h3 {
+    text-align: center;
+}
+
+input {
+    width: 98%;
+    margin: 10%;
+    align-self: center;
+}
+
+/* Estilos generales */
+body, html {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+body {
+    background-image: url('../imagenes/FONDO_PAGINA.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center !important;
+}
+
+.container {
+    height: 50vh; 
+    width: 100vw;
+    background: url('../imagenes/stock1.webp') no-repeat;
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    padding: 0%;
+    text-shadow: 4px 4px 4px black;
+}
+
+
+
+.container h1 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    display: flex;
+}
+
+/* Footer */
+footer {
+    border-color: transparent;
+    margin-top: auto;
+    background-color: #2d005f;
+    width: 100%;
+}
+
+.letras-blancas {
+    color: #ffffff;
+}
+
+/* Formularios */
+form {
+    width: 400px;
+    margin: auto;
+    margin-top: 50px !important;
+    margin-bottom: 50px;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+/* Botones y enlaces */
+.button {
+    background-color: transparent !important;
+    color: white !important;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.primary {
+    margin: 20px auto;
+    border-radius: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #ffffff !important;
+    color: #0069f0 !important;
+    border: 1px solid #0069f0;
+    box-shadow: 0 0 10px #0069f0;
+}
+
+
+.image-button {
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-button img {
+    width: 50px;
+    height: 50px;
+}
+
+.image-button img:hover {
+    animation: subir 0.3s forwards;
+}
+
+.image-button-header img:hover {
+    animation: subir 0.3s forwards;
+}
+
+.image-logo img {
+    width: 50px;
+    height: 100%;
+}
+
+.image-button-header img {
+    width: 30px !important;
+    height: 30px !important;
+    margin: 10px;
+
+}
+
+
+/* Tarjetas y contenedores */
+.card {
+    border-radius: 5px;
+}
+
+.card ol{
+
+    width: 27%;
+    height: 110px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.card li{
+
+    width: 27%;
+    height: 110px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.card.large {
+    margin: 10px auto !important;
+    border-radius: 20px;
+    margin: 0 auto;
+    max-height: 450px;
+    max-width: 90%;
+}
+
+.row{
+    justify-content: center;
+}
+
+.video-card iframe {
+    width: 100%;
+}
+
+.full-page-cover {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background-color: #ffffff;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Animaciones */
+@keyframes subir {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-1px);
+    }
+    
+}
+
+.blue{
+
+    color: #0069f0;
+
+}
+
+.novedades-container {
+    display: flex;
+    justify-content: center; 
+    overflow: hidden; 
+}
+
+.grid-novedades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 20px; 
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.grid-page1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(376px, 1fr)); 
+    gap: 20px; 
+    max-width: 1200px; 
+    width: 100%; 
+    margin: auto 0 !important;
+}
+
+.card.articulo {
+    width: 400px;
+    height: 400px; 
+    border-radius: 10px; 
+    text-align:center; 
+    padding: 10px; 
+    margin: 0 auto !important;
+}
+
+.card.articulo img {
+    width: 100%; 
+    height: auto; 
+}
+
+.aling-text {
+    text-transform: none !important;
+    text-align: center;
+    display: block;
+    padding: 15px;
+}
